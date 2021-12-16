@@ -1,28 +1,13 @@
-"""
- A word, phrase, number,or other sequence of characters
- which reads the same backward as forward.
+import math
 
- Examples:
+def is_palindrome(text: str):
+    text_len = len(text)
 
- - mom
- - maddam
- - rubber
- - 123454321
-"""
+    for i in range(math.floor(text_len/2)):
+        if text[i] != text[text_len - i - 1]:
+            return False
 
-
-def is_palindrome(word: str|int) -> bool:
-    """
-    Check if a word is a palindrome
-    """
-    match type(word):
-        case str:
-            return word == word[::-1]
-
-
-def main():
-    print(is_palindrome("mom"))
-
-
-if __name__ == "__main__":
-    main()
+    return True
+    
+def naive_palindrome(text:str):
+    return text == text[::-1]
