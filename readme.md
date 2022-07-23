@@ -1,29 +1,41 @@
 # Algorithms
 
-## Data Structures
+Algorithm is a step-by-step procedure, which defines a set of instructions to be
+executed in a certain order to get the desired output.
 
-An organized way of storing data for use by computer processes.
+Algorithms are generally created independent of underlying languages, i.e. an
+algorithm can be implemented in more than one programming language.
 
-```typescript
-const user = ["Eliaz", 8777, "Peru", "Frontend", ["English", "Spanish"]];
+From the data structure point of view, following are some important categories
+of algorithms:
 
-const user = {
-  firstName: "Eliaz",
-  contributions: 8777,
-  country: "Peru",
-  role: "Frontend",
-  languagesSpoken: ["English", "Spanish"],
-};
-```
+- Search − Algorithm to search an item in a data structure.
 
-- Array: Linear collections of elements that are accessed via indices which are usually integers used to compute offsets
+- Sort − Algorithm to sort items in a certain order.
 
-- Objects: Store a collection of related data or functionality in the form of key-value pairs
+- Insert − Algorithm to insert item in a data structure.
 
-Should the previous snippet be an array or an object?
+- Update − Algorithm to update an existing item in a data structure.
 
-Array: Little insight into the relationship between the various chunks of data
+- Delete − Algorithm to delete an existing item from a data structure.
 
-Object: Shows the relationship with the use of hierarchy and key-value pairs
+### Characteristics of an Algorithm
 
-> The best data structures consume minimal resources while storing data in a meaningful way for various operations
+Not all procedures can be called an algorithm. An algorithm should have the
+following characteristics:
+
+- Unambiguous: Algorithm should be clear and unambiguous. Each of its steps (or
+  phases), and their inputs/outputs should be clear and must lead to only one
+  meaning.
+
+- Input: An algorithm should have 0 or more well-defined inputs.
+
+- Output: An algorithm should have 1 or more well-defined outputs, and should
+  match the desired output.
+
+- Finiteness: Algorithms must terminate after a finite number of steps.
+
+- Feasibility: Should be feasible with the available resources.
+
+- Independent: An algorithm should have step-by-step directions, which should be
+  independent of any programming code.
